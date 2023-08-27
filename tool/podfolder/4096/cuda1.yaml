@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: cuda1-4096
+spec:         
+  containers:
+  - name: cuda-container1
+    image: "docker.io/hokunpark/iitp:4096"             
+    imagePullPolicy: Always
+    resources:
+     requests:
+       cpu: 800m
+     limits:
+       cpu: 800m
+       nvidia.com/gpu: "1"
+    volumeMounts:
+    - mountPath: "/home/tmp"
+      name: vol
+    securityContext:
+      runAsUser: 1000
+    command: ["/bin/sh"]
+    args: ["-c", "cd /home/tmp/cuda1; while true; do LD_LIBRARY_PATH=/usr/local/cuda/lib64 LD_PRELOAD=/usr/libmylib.so /home/matrix; done"]
+  
+  volumes:
+    - name: vol
+      persistentVolumeClaim:
+        claimName: pvc

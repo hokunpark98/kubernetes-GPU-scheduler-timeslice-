@@ -1,0 +1,186 @@
+Name:               dnclab3
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    feature.node.kubernetes.io/cpu-cpuid.ADX=true
+                    feature.node.kubernetes.io/cpu-cpuid.AESNI=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX2=true
+                    feature.node.kubernetes.io/cpu-cpuid.CMPXCHG8=true
+                    feature.node.kubernetes.io/cpu-cpuid.FLUSH_L1D=true
+                    feature.node.kubernetes.io/cpu-cpuid.FMA3=true
+                    feature.node.kubernetes.io/cpu-cpuid.FXSR=true
+                    feature.node.kubernetes.io/cpu-cpuid.FXSROPT=true
+                    feature.node.kubernetes.io/cpu-cpuid.IA32_ARCH_CAP=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBPB=true
+                    feature.node.kubernetes.io/cpu-cpuid.LAHF=true
+                    feature.node.kubernetes.io/cpu-cpuid.MD_CLEAR=true
+                    feature.node.kubernetes.io/cpu-cpuid.MOVBE=true
+                    feature.node.kubernetes.io/cpu-cpuid.MPX=true
+                    feature.node.kubernetes.io/cpu-cpuid.OSXSAVE=true
+                    feature.node.kubernetes.io/cpu-cpuid.SPEC_CTRL_SSBD=true
+                    feature.node.kubernetes.io/cpu-cpuid.SRBDS_CTRL=true
+                    feature.node.kubernetes.io/cpu-cpuid.STIBP=true
+                    feature.node.kubernetes.io/cpu-cpuid.SYSCALL=true
+                    feature.node.kubernetes.io/cpu-cpuid.SYSEE=true
+                    feature.node.kubernetes.io/cpu-cpuid.VMX=true
+                    feature.node.kubernetes.io/cpu-cpuid.X87=true
+                    feature.node.kubernetes.io/cpu-cpuid.XGETBV1=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVE=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVEC=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVEOPT=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVES=true
+                    feature.node.kubernetes.io/cpu-hardware_multithreading=true
+                    feature.node.kubernetes.io/cpu-model.family=6
+                    feature.node.kubernetes.io/cpu-model.id=165
+                    feature.node.kubernetes.io/cpu-model.vendor_id=Intel
+                    feature.node.kubernetes.io/cpu-pstate.scaling_governor=powersave
+                    feature.node.kubernetes.io/cpu-pstate.status=active
+                    feature.node.kubernetes.io/cpu-pstate.turbo=true
+                    feature.node.kubernetes.io/kernel-config.NO_HZ=true
+                    feature.node.kubernetes.io/kernel-config.NO_HZ_IDLE=true
+                    feature.node.kubernetes.io/kernel-version.full=5.4.0-150-generic
+                    feature.node.kubernetes.io/kernel-version.major=5
+                    feature.node.kubernetes.io/kernel-version.minor=4
+                    feature.node.kubernetes.io/kernel-version.revision=0
+                    feature.node.kubernetes.io/pci-10de.present=true
+                    feature.node.kubernetes.io/pci-8086.present=true
+                    feature.node.kubernetes.io/storage-nonrotationaldisk=true
+                    feature.node.kubernetes.io/system-os_release.ID=ubuntu
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID=18.04
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID.major=18
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID.minor=04
+                    feature.node.kubernetes.io/usb-ff_0b05_1939.present=true
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=dnclab3
+                    kubernetes.io/os=linux
+                    nvidia.com/cuda.driver.major=525
+                    nvidia.com/cuda.driver.minor=125
+                    nvidia.com/cuda.driver.rev=06
+                    nvidia.com/cuda.runtime.major=12
+                    nvidia.com/cuda.runtime.minor=0
+                    nvidia.com/gfd.timestamp=1690721551
+                    nvidia.com/gpu.compute.major=8
+                    nvidia.com/gpu.compute.minor=6
+                    nvidia.com/gpu.count=1
+                    nvidia.com/gpu.deploy.container-toolkit=true
+                    nvidia.com/gpu.deploy.dcgm=true
+                    nvidia.com/gpu.deploy.dcgm-exporter=true
+                    nvidia.com/gpu.deploy.device-plugin=true
+                    nvidia.com/gpu.deploy.driver=true
+                    nvidia.com/gpu.deploy.gpu-feature-discovery=true
+                    nvidia.com/gpu.deploy.node-status-exporter=true
+                    nvidia.com/gpu.deploy.operator-validator=true
+                    nvidia.com/gpu.family=ampere
+                    nvidia.com/gpu.machine=System-Product-Name
+                    nvidia.com/gpu.memory=24576
+                    nvidia.com/gpu.present=true
+                    nvidia.com/gpu.product=NVIDIA-GeForce-RTX-3090
+                    nvidia.com/gpu.replicas=1
+                    nvidia.com/mig.capable=false
+                    nvidia.com/mig.strategy=single
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    nfd.node.kubernetes.io/extended-resources: 
+                    nfd.node.kubernetes.io/feature-labels:
+                      cpu-cpuid.ADX,cpu-cpuid.AESNI,cpu-cpuid.AVX,cpu-cpuid.AVX2,cpu-cpuid.CMPXCHG8,cpu-cpuid.FLUSH_L1D,cpu-cpuid.FMA3,cpu-cpuid.FXSR,cpu-cpuid....
+                    nfd.node.kubernetes.io/worker.version: v0.12.1
+                    node.alpha.kubernetes.io/ttl: 0
+                    nvidia.com/gpu-driver-upgrade-enabled: true
+                    projectcalico.org/IPv4Address: 192.168.0.4/24
+                    projectcalico.org/IPv4IPIPTunnelAddr: 172.27.155.128
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Sun, 30 Jul 2023 21:33:06 +0900
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  dnclab3
+  AcquireTime:     <unset>
+  RenewTime:       Sun, 30 Jul 2023 21:57:25 +0900
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  NetworkUnavailable   False   Sun, 30 Jul 2023 21:33:11 +0900   Sun, 30 Jul 2023 21:33:11 +0900   CalicoIsUp                   Calico is running on this node
+  MemoryPressure       False   Sun, 30 Jul 2023 21:52:51 +0900   Sun, 30 Jul 2023 21:33:06 +0900   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Sun, 30 Jul 2023 21:52:51 +0900   Sun, 30 Jul 2023 21:33:06 +0900   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Sun, 30 Jul 2023 21:52:51 +0900   Sun, 30 Jul 2023 21:33:06 +0900   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Sun, 30 Jul 2023 21:52:51 +0900   Sun, 30 Jul 2023 21:46:40 +0900   KubeletReady                 kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  192.168.0.4
+  Hostname:    dnclab3
+Capacity:
+  cpu:                20
+  ephemeral-storage:  479079112Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             32755244Ki
+  nvidia.com/gpu:     1
+  pods:               110
+Allocatable:
+  cpu:                20
+  ephemeral-storage:  441519308889
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             32652844Ki
+  nvidia.com/gpu:     1
+  pods:               110
+System Info:
+  Machine ID:                 ddcba600321d41f987badfea046ac3e1
+  System UUID:                3eecca3d-83ab-85dd-2cfd-3c7c3f526a78
+  Boot ID:                    03e94a78-46fe-4d69-84f3-05173e821b1b
+  Kernel Version:             5.4.0-150-generic
+  OS Image:                   Ubuntu 18.04.6 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.21
+  Kubelet Version:            v1.24.15
+  Kube-Proxy Version:         v1.24.15
+PodCIDR:                      172.16.1.0/24
+PodCIDRs:                     172.16.1.0/24
+Non-terminated Pods:          (8 in total)
+  Namespace                   Name                                                           CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                           ------------  ----------  ---------------  -------------  ---
+  gpu-operator                gpu-feature-discovery-w7b8f                                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4m57s
+  gpu-operator                gpu-operator-1690721531-node-feature-discovery-worker-vbr47    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5m12s
+  gpu-operator                nvidia-container-toolkit-daemonset-lbgmj                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         4m58s
+  gpu-operator                nvidia-dcgm-exporter-djvhl                                     0 (0%)        0 (0%)      0 (0%)           0 (0%)         4m57s
+  gpu-operator                nvidia-device-plugin-daemonset-x84wv                           0 (0%)        0 (0%)      0 (0%)           0 (0%)         4m58s
+  gpu-operator                nvidia-operator-validator-v4tbt                                0 (0%)        0 (0%)      0 (0%)           0 (0%)         4m58s
+  kube-system                 calico-node-wxvds                                              250m (1%)     0 (0%)      0 (0%)           0 (0%)         24m
+  kube-system                 kube-proxy-5hn29                                               0 (0%)        0 (0%)      0 (0%)           0 (0%)         24m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                250m (1%)  0 (0%)
+  memory             0 (0%)     0 (0%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-1Gi      0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+  nvidia.com/gpu     0          0
+Events:
+  Type     Reason                   Age                From             Message
+  ----     ------                   ----               ----             -------
+  Normal   Starting                 24m                kube-proxy       
+  Normal   Starting                 24m                kubelet          Starting kubelet.
+  Warning  InvalidDiskCapacity      24m                kubelet          invalid capacity 0 on image filesystem
+  Normal   NodeHasSufficientMemory  24m (x2 over 24m)  kubelet          Node dnclab3 status is now: NodeHasSufficientMemory
+  Normal   NodeHasNoDiskPressure    24m (x2 over 24m)  kubelet          Node dnclab3 status is now: NodeHasNoDiskPressure
+  Normal   NodeHasSufficientPID     24m (x2 over 24m)  kubelet          Node dnclab3 status is now: NodeHasSufficientPID
+  Normal   NodeAllocatableEnforced  24m                kubelet          Updated Node Allocatable limit across pods
+  Normal   RegisteredNode           24m                node-controller  Node dnclab3 event: Registered Node dnclab3 in Controller
+  Normal   NodeHasNoDiskPressure    23m                kubelet          Node dnclab3 status is now: NodeHasNoDiskPressure
+  Warning  InvalidDiskCapacity      23m                kubelet          invalid capacity 0 on image filesystem
+  Normal   NodeAllocatableEnforced  23m                kubelet          Updated Node Allocatable limit across pods
+  Normal   NodeHasSufficientMemory  23m                kubelet          Node dnclab3 status is now: NodeHasSufficientMemory
+  Normal   Starting                 23m                kubelet          Starting kubelet.
+  Normal   NodeHasSufficientPID     23m                kubelet          Node dnclab3 status is now: NodeHasSufficientPID
+  Normal   NodeNotReady             17m                kubelet          Node dnclab3 status is now: NodeNotReady
+  Warning  ContainerGCFailed        11m (x7 over 17m)  kubelet          rpc error: code = Unimplemented desc = unknown service runtime.v1.RuntimeService
+  Normal   NodeReady                10m (x2 over 23m)  kubelet          Node dnclab3 status is now: NodeReady
+  Normal   Starting                 8m42s              kubelet          Starting kubelet.
+  Warning  InvalidDiskCapacity      8m42s              kubelet          invalid capacity 0 on image filesystem
+  Normal   NodeAllocatableEnforced  8m42s              kubelet          Updated Node Allocatable limit across pods
+  Normal   NodeHasSufficientMemory  8m42s              kubelet          Node dnclab3 status is now: NodeHasSufficientMemory
+  Normal   NodeHasNoDiskPressure    8m42s              kubelet          Node dnclab3 status is now: NodeHasNoDiskPressure
+  Normal   NodeHasSufficientPID     8m42s              kubelet          Node dnclab3 status is now: NodeHasSufficientPID
+  Warning  ContainerGCFailed        4m42s              kubelet          rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial unix /run/containerd/containerd.sock: connect: connection refused"

@@ -1,0 +1,1 @@
+kubectl exec -it cuda1-4096 -- stress -c 1

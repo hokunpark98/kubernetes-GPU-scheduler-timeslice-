@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: monitorserver
+spec:         
+  containers:
+  - name: monitorserver-container
+    image: "docker.io/hokunpark/iitp:monitorServer"             
+    imagePullPolicy: Always
+    resources:
+     requests:
+       cpu: 500m
+     limits:
+       cpu: 500m
+    volumeMounts:
+    - mountPath: "/home/tmp"
+      name: vol
+
+  volumes:
+  - name: vol
+    persistentVolumeClaim:
+      claimName: pvc
+
+  nodeSelector:
+     key: master      

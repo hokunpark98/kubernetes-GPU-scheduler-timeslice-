@@ -1,0 +1,21 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "creationTimestamp": "2023-07-13T07:23:19Z",
+        "deletionTimestamp": "2023-07-13T09:54:44Z",
+        "labels": {
+            "kubernetes.io/metadata.name": "gpu-operator",
+            "name": "gpu-operator"
+        },
+        "name": "gpu-operator",
+        "resourceVersion": "6692616",
+        "uid": "9d5710f1-c936-4c37-b608-deda10e65561"
+    },
+    "spec": {
+	"finalizers":        
+    },
+    "status": {
+	    "phase": "Terminating"
+    }
+}
